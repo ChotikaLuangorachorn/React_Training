@@ -15,11 +15,12 @@ class PostList extends Component {
         this.setState({ list: json })
       })
   }
+
+  // for seaching
   handleChange = (e) => {
     this.setState({ title: e.target.value });
     e.preventDefault();
   }
-
   onSubmitSearch = (e) => {
 
     const { title } = this.state;
